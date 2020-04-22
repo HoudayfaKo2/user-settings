@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>LET - Des tables de discussions pour tous.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="hover.css" />
+  <link rel="stylesheet" href="bulma.css" />
+
+  <script src="https://kit.fontawesome.com/38f7c30dde.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar is-black" role="navigation" aria-label="main navigation" style=" padding: 14px 0;">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item i3" href="">
+          <img src=" LET_tsp2.png" class="" />
+          <h1 class="titel ">LET</h1>
+
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+
+
+          <a class="navbar-item nav-item">
+            Tables de discussions
+          </a>
+
+
+
+
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+
+              <div class="my-profile-picture"></div>
+              Michael
+            </a>
+
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item navbar-item2">
+                <i class="mr-3 fas fa-user-alt"></i> Profil
+              </a>
+
+              <hr class="navbar-divider">
+              <a class="navbar-item navbar-item2">
+                <i class="mr-3 fas fa-heart"></i> Contribuer
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="home-profil">
+      <div class="pdp-pro">
+
+
+      </div>
+      <div class="name-pro">
+        <h1> Michael08</h1>
+      </div>
+    </div>
+
+
+
+    <h1 class="li-title-param-profil" style="padding-left: 20px;">Changer ses identifiants </h1>
+
+  </div>
+
+  <div class="container">
+    <span>Changer de pseudo : </span>
+    <div class="chg-name" style="margin-top: 5px;">
+
+      <input class="input in-name" type="text" placeholder="John Doe "> <button
+        class="button is-primary">Enregister</button>
+    </div>
+    <span>Adresse e-mail : </span>
+
+    <div class="chg-email">
+      <input class="input in-name" type="mail" placeholder="JohnDoe@gmail.com"> <button
+        class="button is-primary">Enregister</button>
+    </div>
+    <span>Changer de mot de passe : </span>
+
+
+    <div class="chg-psw">
+      <input class="input in-name" type="password" placeholder="Mot de passe">
+      <input class="input in-name" type="password" placeholder="  Confimer le mot de passe">
+      <button class=" button is-primary">Enregister </button>
+    </div>
+
+    <span>Changer de photo de profil : </span>
+    <div class="chg-photo-profil">
+
+      <form action="#">
+        <input type="file" name="pic" accept="image/*">
+        <span class="plus-pdp"><i class="fas fa-plus"></i></span>
+        </input>
+        <button class="button is-primary">Enregister </button>
+
+      </form>
+
+
+    </div>
+  </div>
+
+  <div class="footer mt-5s">
+    <div class="brand-foot">
+      <h1>LET - All rights reserved.</h1>
+    </div>
+
+    <div class="links-foot">
+      <a href="#" class="signalement-1"><i class="fas fa-exclamation-triangle"></i> Signaler un soucis </a>
+    </div>
+
+  </div>
+  <script>document.addEventListener('DOMContentLoaded', () => {
+
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });</script>
+
+  <style>
+    .navbar-item2 {
+      border-radius: 0px !important;
+    }
+
+    .navbar-item2:hover {
+      border-radius: 0px !important;
+      color: black !important;
+    }
+
+
+    .mr-3 {
+      margin-right: 10px;
+    }
+  </style>
+</body>
+
+</html>
